@@ -71,13 +71,16 @@
 				<key>script</key>
 				<string>if ["{query}" == ""]
 then
-	open "http://php.net/manual/en/function.date.php"
+	open "http://strfti.me/"
 else
 	if [ -f "format.txt" ]; then
 		rm format.txt
 	fi
+	if [ -f "format2.txt" ]; then
+		rm format2.txt
+	fi
 	in=$(echo "{query}" | tr -d "\\")
-	echo "$in" &gt; format.txt
+	echo "$in" &gt; format2.txt
 	echo "Saved date format \"{query}\""
 fi</string>
 				<key>type</key>

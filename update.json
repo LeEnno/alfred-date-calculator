@@ -1,5 +1,5 @@
 {
-    "version": 1.2,
+    "version": 2.0,
     "download_uri": "https://github.com/LeEnno/alfred-date-calculator/blob/master/Date%20Calculator.alfredworkflow?raw=true",
-    "description": "Fixed support for alleyoop"
+    "description": "More speed + using 'strftime' format (not PHP's 'date' anymore)"
 }
