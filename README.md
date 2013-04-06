@@ -36,6 +36,10 @@ Prepend a number to the identifiers and optionally a minus sign for subtracting.
 Change Default Format
 ---------------------
 
-You Probably don't want to stick with the default date format. Changing it is pretty easy. Just enter `dateformat` and type the format you like (or choose from the suggestions). You have to give a string as used in [PHP's `date` function](http://php.net/manual/en/function.date.php "PHP date"). Preview will be shown in realtime.
+You Probably don't want to stick with the default date format. Changing it is pretty easy. Just enter `dateformat` and type the format you like (or choose from the suggestions). You have to give a string as used in <s>[PHP's `date` function](http://php.net/manual/en/function.date.php "PHP date")</s> [strftime](http://strfti.me/ "strfti.me: strftime reference and sandbox for Ruby, Python, PHP"). You can disregard the `%`-character. The script will add it automagically for you.
 
-![Date Calculator in Alfred](https://raw.github.com/LeEnno/alfred-date-calculator/master/screenshot_dateformat.png)
+Preview will be shown in realtime.
+
+![Date Calculator in Alfred](https://raw.github.com/LeEnno/alfred-date-calculator/master/screenshot_dateformat_simple.png)
+
+![Date Calculator with custom format](https://raw.github.com/LeEnno/alfred-date-calculator/master/screenshot_dateformat_custom.png)
