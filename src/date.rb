@@ -107,11 +107,17 @@ end
 
 # return result
 ts_formatted = `echo $(date #{params.join(' ')} "+#{format}")`.strip
+ts_epoch = `echo $(date #{params.join(' ')} "+%s")`.strip
 puts <<ENDS_HERE
 <items>
   <item uid="date" arg="#{ts_formatted}">
     <title>#{ts_formatted}</title>
     <subtitle>Press "Enter" to copy "#{ts_formatted}" to clipboard</subtitle>
+    <icon>icon.png</icon>
+  </item>
+  <item uid="date-epoch" arg="#{ts_epoch}">
+    <title>#{ts_epoch}</title>
+    <subtitle>Press "Enter" to copy "#{ts_epoch}" to clipboard</subtitle>
     <icon>icon.png</icon>
   </item>
 </items>
